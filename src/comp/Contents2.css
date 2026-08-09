@@ -1,0 +1,126 @@
+/* ============================================================
+   OUR STORY SECTION
+   ============================================================ */
+
+.story-section {
+  padding: 100px 5% 80px;
+  background: var(--background);   /* #F8FAFC — same as Counsellors */
+}
+
+/* ---- Two-column inner wrapper ---- */
+.story-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 72px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+/* ========== LEFT: text column ========== */
+.story-text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.story-text h2 {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 800;
+  color: var(--text);
+  line-height: 1.18;
+  margin: 0;
+}
+
+.story-lead {
+  font-size: 1.05rem;
+  color: var(--text);
+  font-weight: 500;
+  line-height: 1.75;
+  margin: 0;
+}
+
+.story-body {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* ========== RIGHT: pillars column ========== */
+.story-pillars {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* ---- Single pillar card ---- */
+.story-pillar {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 22px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.story-pillar:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(109, 225, 251, 0.18);
+}
+
+/* ---- Icon bubble ---- */
+.pillar-icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #d0f7f1, #b2f0e8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0d8c7a;
+}
+
+.pillar-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+/* ---- Pillar text ---- */
+.pillar-body {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.pillar-body h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+}
+
+.pillar-body p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  margin: 0;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 860px) {
+  .story-inner {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .story-section {
+    padding: 70px 5% 60px;
+  }
+}

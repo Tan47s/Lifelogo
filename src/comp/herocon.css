@@ -1,0 +1,185 @@
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+
+.hero-section {
+  position: relative;
+  margin-top: 64px;           /* clears fixed header */
+  width: 100%;
+  min-height: 92vh;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;      /* content sits in lower half */
+  padding: 0 7% 80px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* ---- Multi-layer overlay ---- */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  /* left-to-right: dark teal → transparent, plus bottom vignette */
+  background:
+    linear-gradient(100deg, rgba(5, 40, 45, 0.88) 0%, rgba(5, 40, 45, 0.55) 52%, rgba(5, 40, 45, 0.15) 100%),
+    linear-gradient(to top, rgba(5, 40, 45, 0.75) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* ---- Content column ---- */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  max-width: 680px;
+}
+
+/* ---- Eyebrow badge ---- */
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(135deg, #d0f7f1, #b2f0e8);
+  color: #0d8c7a;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 5px 16px;
+  border-radius: 999px;
+}
+
+/* ---- Quote ---- */
+.hero-quote {
+  font-size: clamp(13px, 1.4vw, 16px);
+  color: rgba(109, 225, 251, 0.9);
+  font-style: italic;
+  font-weight: 500;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ---- Headline ---- */
+.hero-headline {
+  font-size: clamp(30px, 5vw, 54px);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.12;
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+.hero-headline-accent {
+  color: var(--primary);      /* teal #6de1fb */
+}
+
+/* ---- Sub-text ---- */
+.hero-sub {
+  font-size: clamp(14px, 1.4vw, 17px);
+  color: rgba(255, 255, 255, 0.82);
+  line-height: 1.7;
+  margin: 0;
+  max-width: 580px;
+}
+
+/* ---- CTAs ---- */
+.hero-ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.hero-btn {
+  padding: 13px 30px;
+  border-radius: 999px;
+  font-size: clamp(14px, 1.2vw, 16px);
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.hero-btn--primary {
+  background: var(--primary);
+  color: #05282d;
+  box-shadow: 0 4px 20px rgba(109, 225, 251, 0.35);
+}
+
+.hero-btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(109, 225, 251, 0.5);
+}
+
+.hero-btn--ghost {
+  background: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.55);
+}
+
+.hero-btn--ghost:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: #ffffff;
+  transform: translateY(-3px);
+}
+
+/* ---- Stats strip ---- */
+.hero-stats {
+  display: flex;
+  gap: 36px;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  flex-wrap: wrap;
+}
+
+.hero-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.hero-stat-value {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 800;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.hero-stat-label {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 0 6% 60px;
+    min-height: 100vh;
+    align-items: flex-end;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-ctas {
+    width: 100%;
+  }
+
+  .hero-btn {
+    flex: 1 1 140px;
+    text-align: center;
+  }
+
+  .hero-stats {
+    gap: 24px;
+  }
+}

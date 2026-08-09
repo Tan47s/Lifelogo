@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+  /* Brand */
+  --primary: #6de1fb;        /* Teal from header */
+  --primary-light: #02ff78;
+
+
+  /* Logo greens */
+  --green: #22C55E;
+  --green-light: #DCFCE7;
+
+  /* Blue accent */
+  --blue: #38BDF8;
+  --blue-light: #E0F2FE;
+
+  /* Backgrounds */
+  --background: #F8FAFC;
+  --surface: #FFFFFF;
+
+  /* Text */
+  --text: #1E293B;
+  --text-muted: #64748B;
+
+  /* Borders */
+  --border: #E2E8F0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+h1{
+    font-weight: 800;
+}
+
+p{
+    font-weight: 400;
+}

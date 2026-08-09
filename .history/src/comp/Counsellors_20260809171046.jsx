@@ -1,0 +1,80 @@
+import React from 'react'
+import './Counsellors.css'
+import c1 from '../assets/counsellor1.jpg'
+import c2 from '../assets/counsellor2.jpg'
+import c3 from '../assets/counsellor3.jpeg'
+import c4 from '../assets/counsellor4.jpeg'
+import c5 from '../assets/counsellor5.jpeg'
+import c6 from '../assets/counsellor6.jpg'
+
+const counsellors = [
+  {
+    img: c1,
+    name: 'Sunjeda Parvin',
+    role: 'Founder - Life Logo',
+    bio: 'Sunjeda Parvin is a Parent Training Facilitator(Uk) and holds an Ms in Counselling Psychology(Du). She serves as the Founder - Life Logo and Advisor - Super Kid Initiatives. She has 16+ Years of Experience in Mental Health Area and 300+ Case Solved.',
+  },
+  {
+    img: c2,
+    name: 'Sabina Islam',
+    role: 'Psychologist - LifeLogo',
+    bio: 'Sabina Islam holds an MS in Social Psychology from the University of Dhaka. She has 4+ Years of Experience with expertise in Psychotherapy (CBT & DBT), Couple & Family Counselling, Addiction Counselling, and Parenting Counselling.',
+  },
+  {
+    img: c3,
+    name: 'Israt Jahan Labone',
+    role: 'Psychologist - LifeLogo(On-Demand)',
+    bio: 'Israt Jahan Labone holds an MS in School Psychology (DU) and is a Master Trainer (Ministry of Education and SESIP). She has 5+ Years of Experience and Special Training on CBT, NVC, Anger management, Stress Management, Mindfulness.',
+  },
+  {
+    img: c4,
+    name: 'Dr. Samuel Boateng',
+    role: 'Senior Trauma Therapist',
+    bio: 'Dr. Boateng has over two decades of experience supporting individuals through complex trauma, PTSD, and grief. His calm, structured approach helps clients reclaim a sense of safety and self-worth.',
+  },
+  {
+    img: c5,
+    name: 'Ms. Abena Darko',
+    role: 'Couples & Relationship Counsellor',
+    bio: 'Abena works with couples and individuals navigating relational challenges, communication breakdowns, and emotional disconnection. Her warm style helps clients rebuild trust and deepen their bonds.',
+  },
+  {
+    img: c6,
+    name: 'Mr. Kofi Asante',
+    role: 'Community & Group Therapist',
+    bio: 'Kofi leads group therapy sessions and community outreach programmes. He is passionate about making mental health support accessible and reducing stigma within local communities.',
+  },
+]
+
+export const Counsellors = () => {
+  return (
+    <section id="team" className="counsellors-section">
+      {/* Section Header */}
+      <div className="counsellors-header">
+        <span className="section-badge">Our Team</span>
+        <h2>Meet the Counsellors</h2>
+        <p className="counsellors-subtitle">
+          Our qualified, compassionate professionals are dedicated to walking
+          alongside you on your journey to wholeness.
+        </p>
+      </div>
+
+      {/* Cards Grid */}
+      <div className="counsellors-grid">
+        {counsellors.map((c, i) => (
+          <div className="counsellor-card" key={i}>
+            <div className="counsellor-img-wrap">
+              <img src={c.img} alt={c.name} className="counsellor-img" />
+              <div className="counsellor-img-overlay" />
+            </div>
+            <div className="counsellor-info">
+              <h3>{c.name}</h3>
+              <span className="counsellor-role">{c.role}</span>
+              <p>{c.bio}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}
