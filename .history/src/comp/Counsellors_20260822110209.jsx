@@ -61,9 +61,9 @@ const counsellors = [
   },
     {
     img: c9,
-    name: 'Fahmeda Akter Ador',
-    role: 'Psychologist - LifeLogo',
-    bio: 'Fahmeda Akter Ador holds an MS in Developmental Psychology (DU). She has 4+ years of experience and training in CBT, DBT, Trauma-focused counselling, Couple Counselling, and Anger Management.',
+    name: 'Md. Rasidul Alam',
+    role: 'Psychologist - LifeLogo (On-Demand)',
+    bio: 'Md. Rasidul Alam holds an M.Sc. in Organisational and Management Psychology. He has 8+ Years of Experience and Special Training on CBT, DBT, Substance Use Disorder, Family Counselling, Psychosexual problem with Porn Addiction and Suicide Prevention.',
   },
 ]
 

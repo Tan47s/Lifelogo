@@ -49,21 +49,21 @@ const counsellors = [
   },
     {
     img: c7,
-    name: 'Zannatul Ferdous',
+    name: 'Md. Rasidul Alam',
     role: 'Psychologist - LifeLogo (On-Demand)',
-    bio: 'Zannatul Ferdous holds an MS in Educational Psychology (DU). She has 7+ years of experience and therapeutic approaches in CBT, PFA, TA, NVC, and NLP, with expertise in Children, Adolescent, Adults, Couples, Families, and Groups.',
+    bio: 'Md. Rasidul Alam holds an M.Sc. in Organisational and Management Psychology. He has 8+ Years of Experience and Special Training on CBT, DBT, Substance Use Disorder, Family Counselling, Psychosexual problem with Porn Addiction and Suicide Prevention.',
   },
     {
-    img: c8,
-    name: 'Nusrat Jahan Kolly',
+    img: c6,
+    name: 'Md. Rasidul Alam',
     role: 'Psychologist - LifeLogo (On-Demand)',
-    bio: 'Nusrat Jahan Kolly holds an MS in Educational Psychology (DU). She has 9+ years of experience and therapeutic approaches in CBT, PFA, TA, and NVC, with expertise in Children, Adolescent, Adults, Couples, Families, and Groups.',
+    bio: 'Md. Rasidul Alam holds an M.Sc. in Organisational and Management Psychology. He has 8+ Years of Experience and Special Training on CBT, DBT, Substance Use Disorder, Family Counselling, Psychosexual problem with Porn Addiction and Suicide Prevention.',
   },
     {
-    img: c9,
-    name: 'Fahmeda Akter Ador',
-    role: 'Psychologist - LifeLogo',
-    bio: 'Fahmeda Akter Ador holds an MS in Developmental Psychology (DU). She has 4+ years of experience and training in CBT, DBT, Trauma-focused counselling, Couple Counselling, and Anger Management.',
+    img: c6,
+    name: 'Md. Rasidul Alam',
+    role: 'Psychologist - LifeLogo (On-Demand)',
+    bio: 'Md. Rasidul Alam holds an M.Sc. in Organisational and Management Psychology. He has 8+ Years of Experience and Special Training on CBT, DBT, Substance Use Disorder, Family Counselling, Psychosexual problem with Porn Addiction and Suicide Prevention.',
   },
 ]
 
