@@ -21,15 +21,11 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  pointer-events: none;
-
+  /* left-to-right: dark teal → transparent, plus bottom vignette */
   background:
-    linear-gradient(
-      100deg,
-      rgba(5, 40, 45, 0.88) 0%,
-      rgba(5, 40, 45, 0.55) 30%,
-      rgba(5, 40, 45, 0) 65%
-    );
+    linear-gradient(100deg, rgba(5, 40, 45, 0.88) 0%, rgba(5, 40, 45, 0.55) 52%, rgba(5, 40, 45, 0.15) 100%),
+    linear-gradient(to top, rgba(5, 40, 45, 0.75) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 /* ---- Content column ---- */
@@ -46,7 +42,7 @@
 /* ---- Eyebrow badge ---- */
 .hero-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #d0f7f1, #b2f0e8);
+  
   color: #0d8c7a;
   font-size: 0.78rem;
   font-weight: 700;

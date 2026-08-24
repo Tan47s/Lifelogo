@@ -12,12 +12,7 @@ export const App = () => {
     <div>
       <Header/>
       <Herocon/>
-      <Contents2/>
-      <Service2/>
       <Workshop/>
-      <Counsellors/>
-      <Contact/>
-      <Footer/>
     </div>
   )
 }

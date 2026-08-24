@@ -11,13 +11,7 @@ export const App = () => {
   return (
     <div>
       <Header/>
-      <Herocon/>
-      <Contents2/>
-      <Service2/>
-      <Workshop/>
-      <Counsellors/>
-      <Contact/>
-      <Footer/>
+     <Workshop/>
     </div>
   )
 }

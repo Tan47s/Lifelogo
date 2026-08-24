@@ -16,8 +16,6 @@ export const App = () => {
       <Service2/>
       <Workshop/>
       <Counsellors/>
-      <Contact/>
-      <Footer/>
     </div>
   )
 }

@@ -21,15 +21,11 @@
 .hero-overlay {
   position: absolute;
   inset: 0;
-  pointer-events: none;
-
+  /* left-to-right: dark teal → transparent, plus bottom vignette */
   background:
-    linear-gradient(
-      100deg,
-      rgba(5, 40, 45, 0.88) 0%,
-      rgba(5, 40, 45, 0.55) 30%,
-      rgba(5, 40, 45, 0) 65%
-    );
+    linear-gradient(100deg, rgba(5, 40, 45, 0.88) 0%, rgba(5, 40, 45, 0.55) 52%, rgba(255, 255, 255, 0.15) 100%),
+    linear-gradient(to top, rgba(5, 40, 45, 0.75) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 /* ---- Content column ---- */

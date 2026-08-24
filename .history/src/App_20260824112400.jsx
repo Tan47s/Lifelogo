@@ -6,18 +6,11 @@ import { Service2 } from './comp/Service2'
 import { Counsellors } from './comp/Counsellors'
 import { Contact } from './comp/Contact'
 import { Footer } from './comp/Footer'
-import Workshop from './comp/Workshop'
+import {Workshop} from './comp/Workshop'
 export const App = () => {
   return (
     <div>
-      <Header/>
-      <Herocon/>
-      <Contents2/>
-      <Service2/>
-      <Workshop/>
-      <Counsellors/>
-      <Contact/>
-      <Footer/>
+     <Workshop/>
     </div>
   )
 }

@@ -1,6 +1,6 @@
 import './herocon.css'
 import Hero from '../assets/hero3.jpg'
-import bg from '../assets/workshop/ww5.jpeg'
+import bg from '../assets/workshop/bg.jpeg'
 const stats = [
   { value: '500+', label: 'Lives Impacted' },
   { value: '15+', label: 'Years Experience' },
@@ -17,7 +17,7 @@ export const Herocon = () => {
     <section
       id="home"
       className="hero-section"
-      style={{ backgroundImage: `url(${bg})` }}
+      style={{ backgroundImage: `url(${Hero})` }}
     >
       {/* layered overlay */}
       <div className="hero-overlay" />

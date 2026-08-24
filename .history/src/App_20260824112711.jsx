@@ -15,9 +15,6 @@ export const App = () => {
       <Contents2/>
       <Service2/>
       <Workshop/>
-      <Counsellors/>
-      <Contact/>
-      <Footer/>
     </div>
   )
 }
