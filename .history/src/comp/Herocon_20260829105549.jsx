@@ -1,6 +1,6 @@
 import './herocon.css'
 import Hero from '../assets/hero3.jpg'
-import bg from '../assets/BG3.jpg'
+import bg from '../assets/BG3.jpeg'
 const stats = [
   { value: '500+', label: 'Lives Impacted' },
   { value: '15+', label: 'Years Experience' },

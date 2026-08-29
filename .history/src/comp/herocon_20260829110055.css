@@ -4,7 +4,7 @@
 
 .hero-section {
   position: relative;
-  margin-top: 1px;           /* clears fixed header */
+  margin-top: 20px;           /* clears fixed header */
   width: 100%;
   min-height: 92vh;
   background-size: cover;
